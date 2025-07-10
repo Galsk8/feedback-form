@@ -8,15 +8,28 @@
 </head>
 <body>
     <h1>Feedback Form</h1>
+    <hr class="solid" width="50%">
     <h3>We would like to hear your thoughts and suggestions</h3>
 
     <form id="feedback-form">
         <p>Name</p>
         <input type="text" id="name" placeholder="Enter your name" required>
+        
         <p>Email</p>
         <input type="email" id="email" placeholder="Enter your email" required>
+        
+        <label for="rating">How would you rate our service?</label>
+        <div id="rating">
+            <span class="emoji" data-value="angry">😡</span>
+            <span class="emoji" data-value="sad">☹️</span>
+            <span class="emoji" data-value="neutral">😐</span>
+            <span class="emoji" data-value="smile">🙂</span>
+            <span class="emoji" data-value="love">😍</span>
+        </div>
+        
         <p>Additional comments</p>
         <textarea id="message" rows="10" placeholder="Your comments" required></textarea>
+        
         <button type="submit">Send</button>
     </form>
 

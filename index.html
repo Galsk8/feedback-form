@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbac Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <h3>We would like to hear your thoughts and suggestions</h3>
+
+    <form id="feedback-form">
+        <p>Name</p>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <p>Email</p>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <p>Additional comments</p>
+        <textarea id="message" rows="10" placeholder="Your comments" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <div id="response"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
